@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction List</title>
+</head>
+<body>
+    <h1>Predictions</h1>
+    <ul>
+        {% for prediction in predictions %}
+            <li>{{ prediction.deed.title }} - {{ prediction.prediction_text }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+

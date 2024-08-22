@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deed List</title>
+</head>
+<body>
+    <h1>Deeds</h1>
+    <ul>
+        {% for deed in deeds %}
+            <li>{{ deed.title }} - {{ deed.description }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

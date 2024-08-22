@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+</head>
+<body>
+    <h1>Profile</h1>
+    <p>Welcome, {{ user.username }}!</p>
+    <a href="{% url 'create_deed' %}">Create Deed</a>
+    <a href="{% url 'deed_list' %}">View Deeds</a>
+    <a href="{% url 'create_prediction' %}">Create Prediction</a>
+    <a href="{% url 'prediction_list' %}">View Predictions</a>
+</body>
+</html>
